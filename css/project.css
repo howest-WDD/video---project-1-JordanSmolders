@@ -265,6 +265,18 @@ iframe {
   }
 }
 
+.c-icons {
+  color: white;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+}
+
+.c-list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c-underline {
   width: 9.375rem;
   border: 0.625rem solid #59c9ec;
@@ -316,8 +328,8 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: change 60s infinite ease-in-out;
-          animation: change 60s infinite ease-in-out;
+  -webkit-animation: change 30s infinite ease-in-out;
+          animation: change 30s infinite ease-in-out;
 }
 
 .btn-primary {
@@ -350,7 +362,7 @@ iframe {
     background-image: url(../img/850_4630-bewerkt.jpg);
   }
   100% {
-    background-image: url(../img/logo_Robyns.PNG);
+    background-image: url(../img/DSC_7802.jpg);
   }
 }
 
@@ -368,7 +380,7 @@ iframe {
     background-image: url(../img/850_4630-bewerkt.jpg);
   }
   100% {
-    background-image: url(../img/logo_Robyns.PNG);
+    background-image: url(../img/DSC_7802.jpg);
   }
 }
 /*# sourceMappingURL=project.css.map */
