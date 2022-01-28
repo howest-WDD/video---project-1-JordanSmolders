@@ -2,17 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Hind:wght@400;500&display=swap");
 .navbar {
   background-color: white;
-  padding-top: 1rem;
   padding-left: 8rem;
   padding-right: 8rem;
-}
-
-.navbar-nav {
-  margin-left: 65%;
+  color: black;
+  margin: 0;
 }
 
 .nav-item {
-  margin-left: 2rem;
+  margin-right: 1rem;
+  color: black;
 }
 
 .nav-link {
@@ -40,17 +38,18 @@
   width: 100%;
 }
 
-.c-video {
-  position: relative;
-  background-color: #8f8f8f;
-  height: 89vh;
-  min-height: 25rem;
-  width: 150%;
+.navbar-collapse {
+  text-align: left;
 }
 
 h1 {
   color: white;
   padding-top: 2rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -58,35 +57,26 @@ h2 {
   -webkit-text-decoration: underline #59c9ec;
           text-decoration: underline #59c9ec;
   padding-top: 3rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
 }
 
 p {
   color: white;
   padding-left: 0;
   margin-left: 0;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
 }
 
 label {
   color: white;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
 }
 
 footer {
   background-color: black;
-  text-align: center;
-  padding-bottom: rem;
-}
-
-footer ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 42%;
-  padding-top: 2rem;
 }
 
 iframe {
@@ -157,7 +147,7 @@ iframe {
 
 .c-contact {
   background-color: #131313;
-  padding-left: 8rem;
+  padding-bottom: 3rem;
 }
 
 .c-container-contact {
@@ -202,11 +192,12 @@ iframe {
 }
 
 .c-left {
-  padding: 3rem;
+  padding-right: 3rem;
 }
 
 .c-rigth {
   height: 100%;
+  padding-top: 4rem;
 }
 
 .c-field {
@@ -256,6 +247,10 @@ iframe {
 }
 
 @media screen and (max-width: 880px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .c-contactbox {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -277,6 +272,12 @@ iframe {
   padding: 0;
 }
 
+.align-items {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .c-underline {
   width: 9.375rem;
   border: 0.625rem solid #59c9ec;
@@ -284,14 +285,18 @@ iframe {
   border-radius: 0.625rem;
 }
 
-.container {
+.container-div {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .c-video {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #797979;
+  height: calc(100vh - 47px);
 }
 
 .col-6 h2 {
@@ -327,9 +332,9 @@ iframe {
   background-image: url(../img/_8501673.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-animation: change 30s infinite ease-in-out;
-          animation: change 30s infinite ease-in-out;
+  background-size: contain;
+  -webkit-animation: change 60s infinite ease-in-out;
+          animation: change 60s infinite ease-in-out;
 }
 
 .btn-primary {
@@ -382,5 +387,60 @@ iframe {
   100% {
     background-image: url(../img/DSC_7802.jpg);
   }
+}
+
+.c-footerlink {
+  text-decoration: none;
+  margin-left: 0.25rem;
+  color: #f5ebd9;
+}
+
+.c-footerlink:hover {
+  color: #59c9ec;
+}
+
+.c-footerinput {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .c-footernieuws {
+    width: 60%;
+  }
+}
+
+.c-footericons {
+  color: #f5ebd9;
+  padding-left: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c-footericons:hover {
+  color: #59c9ec;
+  width: 3.125rem;
+}
+
+.c-footersocial {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.c-footerbtn {
+  margin-left: 1rem;
+}
+
+.c-footeraanmelden {
+  color: #f5ebd9;
+}
+
+.c-footertext {
+  font-family: "Hind", sans-serif;
+  font-size: medium;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #f5ebd9;
 }
 /*# sourceMappingURL=project.css.map */

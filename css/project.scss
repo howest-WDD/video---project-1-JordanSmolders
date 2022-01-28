@@ -3,15 +3,15 @@
 
 .navbar {
   background-color: white;
-  padding-top: 1rem;
   padding-left: 8rem;
   padding-right: 8rem;
+  color: black;
+  margin: 0;
 }
-.navbar-nav {
-  margin-left: 65%;
-}
+
 .nav-item {
-  margin-left: 2rem;
+  margin-right: 1rem;
+  color: black;
 }
 
 .nav-link {
@@ -33,43 +33,42 @@
 .nav-link:hover::after {
   width: 100%;
 }
-
-.c-video {
-  position: relative;
-  background-color: #8f8f8f;
-  height: 89vh;
-  min-height: 25rem;
-  width: 150%;
+.navbar-collapse {
+  text-align: left;
 }
+
 h1 {
   color: white;
   padding-top: 2rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 h2 {
   color: white;
   text-decoration: underline #59c9ec;
   padding-top: 3rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
 }
 p {
   color: white;
   padding-left: 0;
   margin-left: 0;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
 }
 
 label {
   color: white;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
 }
-footer {
+
+footer{
   background-color: black;
-  text-align: center;
-  padding-bottom: rem;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 42%;
-  padding-top: 2rem;
 }
 
 iframe {
@@ -118,7 +117,7 @@ iframe {
 }
 .c-contact {
   background-color: #131313;
-  padding-left: 8rem;
+  padding-bottom: 3rem;
 }
 .c-container-contact {
   background-color: #131313;
@@ -148,10 +147,11 @@ iframe {
   text-align: center;
 }
 .c-left {
-  padding: 3rem;
+  padding-right: 3rem;
 }
 .c-rigth {
   height: 100%;
+  padding-top: 4rem;
 }
 .c-field {
   width: 100%;
@@ -192,6 +192,9 @@ iframe {
   color: #59c9ec;
 }
 @media screen and (max-width: 880px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
   .c-contactbox {
     grid-template-columns: 1fr;
   }
@@ -209,20 +212,25 @@ iframe {
   list-style-type: none;
   padding: 0;
 }
-
+.align-items {
+  align-items: flex-start;
+}
 .c-underline {
   width: 9.375rem;
   border: 0.625rem solid #59c9ec;
   background-color: #59c9ec;
   border-radius: 0.625rem;
 }
-.container {
+.container-div {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 .c-video {
-  width: 100%;
-  height: 100%;
+  
+  overflow: hidden;
+  align-items: center;
+  background-color: #797979 ;
+  height: calc(100vh - 47px)
 }
 
 .col-6 h2 {
@@ -249,8 +257,8 @@ iframe {
   background-image: url(../img/_8501673.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  animation: change 30s infinite ease-in-out;
+  background-size: contain;
+  animation: change 60s infinite ease-in-out;
 }
 .btn-primary {
   background-color: #59c9ec;
@@ -282,4 +290,58 @@ iframe {
   100% {
     background-image: url(../img/DSC_7802.jpg);
   }
+}
+
+.c-footerlink {
+  text-decoration: none;
+  margin-left: 0.25rem;
+  color: #f5ebd9;
+}
+
+.c-footerlink:hover {
+  color: #59c9ec;
+}
+
+.c-footerinput {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .c-footernieuws {
+    width: 60%;
+  }
+}
+
+.c-footericons {
+  color: #f5ebd9;
+  padding-left: 1rem;
+  transition: 0.3s;
+}
+
+.c-footericons:hover {
+  color: #59c9ec;
+  width: 3.125rem;
+}
+
+.c-footersocial {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.c-footerbtn {
+  margin-left: 1rem;
+}
+
+.c-footeraanmelden {
+  color: #f5ebd9;
+}
+
+.c-footertext {
+  font-family: "Hind", sans-serif;
+  font-size: medium;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #f5ebd9;
 }
