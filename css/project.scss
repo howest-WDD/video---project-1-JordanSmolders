@@ -168,9 +168,11 @@ iframe {
   border: 0.125rem solid rgba(30, 85, 250, 0.47);
 }
 .c-field-area {
+  
   width: 100%;
   height: 10rem;
-  margin-bottom: 1rem;
+  padding-left: 1rem;
+  
 }
 .c-field-area:hover {
   background-color: #59c9ec;
@@ -332,7 +334,7 @@ iframe {
 
 .c-footerbtn {
   margin-left: 1rem;
-  background-color: #59c9ec ;
+  
 }
 
 .c-footeraanmelden {

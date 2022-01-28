@@ -220,7 +220,7 @@ iframe {
 .c-field-area {
   width: 100%;
   height: 10rem;
-  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .c-field-area:hover {
